@@ -24,12 +24,18 @@ public class LinkedList {
         }
     }
     public void display() {
-        Node current = head;
+        Node temp = head;
         if(head == null) {
             System.out.println("Null Linked List");
             return;
         }
-
+        System.out.println("Nodes of linked list:");
+        while(temp != null) {
+            //Prints each node by incrementing pointer
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
     }
 
 }

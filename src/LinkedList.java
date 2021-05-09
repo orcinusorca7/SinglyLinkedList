@@ -23,4 +23,13 @@ public class LinkedList {
             tail = newNode;
         }
     }
+    public void display() {
+        Node current = head;
+        if(head == null) {
+            System.out.println("Null Linked List");
+            return;
+        }
+
+    }
+
 }
